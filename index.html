@@ -1,0 +1,50 @@
+<script type="text/javascript">
+function clock() {
+var d = new Date();
+var month_num = d.getMonth()
+var day = d.getDate();
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+
+if (hours <= 9) hours = "0" + hours;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+
+date_time = hours + ":" + minutes + ":" + seconds;
+if (document.layers) {
+ document.layers.doc_time.document.write(date_time);
+ document.layers.doc_time.document.close();
+}
+else document.getElementById("doc_time").innerHTML = date_time;
+ setTimeout("clock()", 1000);
+}
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>Omolix</title>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div id="app">
+		<div id="wrapper">
+			<h1 class="glitch">Omolix</h1>
+			<span class="sub">
+				<a href='https://vk.com/d1589' target="_blank">VK</a>
+				<a href='https://github.com/Omol1x' target="_blank">GITHUB</a>
+				<a href='https://t.me/Omolix' target="_blank">TELEGRAM</a>
+				<a href='https://steamcommunity.com/id/Sn1pezz1n' target="_blank">STEAM</a>
+			</span>
+			<h1 class="sub">
+				<span id="doc_time">
+					<script type="text/javascript">
+						clock();
+					</script>
+				</span>
+			</h1>
+		</div>
+	</div>
+</body>
+</html>
