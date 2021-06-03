@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+
+body {
+	background: url(https://i.ibb.co/tHLkjLv/background.png);
+}
+
+a {
+	text-decoration: none;
+}
+
+html, body, h1 {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#app {
+	background: rgb(10,10,10);
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(background.png);
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+
+#wrapper {
+	 text-align: center;
+}
+
+a {
+	color: rgb(100,220,220);
+}
+a:hover {
+	color: rgb(79,169,169);
+}
+
+.sub {
+	color: rgb(100,220,220);
+	letter-spacing: 1mm;
+}
